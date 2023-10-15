@@ -14,6 +14,9 @@ export const Statistics = () => {
   );
 };
 
-const StyledStatistics = styled.div``;
+const StyledStatistics = styled.div`
+  width: 194px;
+  height: 450px;
+`;
 
 const Text = styled.h2``;

@@ -7,72 +7,77 @@ import { Form } from "../../../components/form/Form";
 export const Contacts = () => {
   return (
     <StyledContacts>
-      <FlexWrapper direction={"column"}>
-        <Text>Let’s Connect</Text>
-        <SocialList>
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                height={"25px"}
-                width={"25px"}
-                viewBox={"0 0 25px 25px"}
-                iconId={"github"}
-              />
-            </SocialLink>
-          </SocialItem>
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                height={"25px"}
-                width={"25px"}
-                viewBox={"0 0 25px 25px"}
-                iconId={"linkedIn"}
-              />
-            </SocialLink>
-          </SocialItem>
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                height={"25px"}
-                width={"25px"}
-                viewBox={"0 0 25px 25px"}
-                iconId={"twitter"}
-              />
-            </SocialLink>
-          </SocialItem>
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                height={"25px"}
-                width={"25px"}
-                viewBox={"0 0 25px 25px"}
-                iconId={"instagram"}
-              />
-            </SocialLink>
-          </SocialItem>
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                height={"25px"}
-                width={"25px"}
-                viewBox={"0 0 25px 25px"}
-                iconId={"telegram"}
-              />
-            </SocialLink>
-          </SocialItem>
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                height={"25px"}
-                width={"25px"}
-                viewBox={"0 0 25px 25px"}
-                iconId={"mail"}
-              />
-            </SocialLink>
-          </SocialItem>
-        </SocialList>
+      <FlexWrapper justify={"space-between"} align={"center"}>
+        <LeftColumn>
+          <Text>
+            Let’s <br /> Connect
+          </Text>
+          <SocialList>
+            <SocialItem>
+              <SocialLink>
+                <Icon
+                  height={"25px"}
+                  width={"25px"}
+                  viewBox={"0 0 25px 25px"}
+                  iconId={"github"}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink>
+                <Icon
+                  height={"25px"}
+                  width={"25px"}
+                  viewBox={"0 0 25px 25px"}
+                  iconId={"linkedIn"}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink>
+                <Icon
+                  height={"25px"}
+                  width={"25px"}
+                  viewBox={"0 0 25px 25px"}
+                  iconId={"twitter"}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink>
+                <Icon
+                  height={"25px"}
+                  width={"25px"}
+                  viewBox={"0 0 25px 25px"}
+                  iconId={"instagram"}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink>
+                <Icon
+                  height={"25px"}
+                  width={"25px"}
+                  viewBox={"0 0 25px 25px"}
+                  iconId={"telegram"}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink>
+                <Icon
+                  height={"25px"}
+                  width={"25px"}
+                  viewBox={"0 0 25px 25px"}
+                  iconId={"mail"}
+                />
+              </SocialLink>
+            </SocialItem>
+          </SocialList>
+        </LeftColumn>
+
+        <Form />
       </FlexWrapper>
-      <Form />
     </StyledContacts>
   );
 };
@@ -98,3 +103,5 @@ const SocialList = styled.ul`
 const SocialItem = styled.li``;
 
 const SocialLink = styled.a``;
+
+const LeftColumn = styled.div``;

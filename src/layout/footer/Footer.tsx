@@ -7,6 +7,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.div`
+  height: 100px;
   background: #000;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;

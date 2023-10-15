@@ -28,12 +28,15 @@ const StyledSlider = styled.div`
 
 const Slide = styled.div`
   max-width: 894px;
+  height: 393px;
   text-align: center;
   display: flex;
   align-items: center;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  width: 490px;
+`;
 
 const Photo = styled.img`
   height: 389px;

@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import "./App.css";
 import { Footer } from "./layout/footer/Footer";
 import { Header } from "./layout/header/Header";
@@ -9,16 +10,21 @@ import { Works } from "./layout/section/works/Works";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <AppBox className="App">
       <Main />
       <Skills />
       <Works />
       <About />
       <Contacts />
       <Footer />
-    </div>
+    </AppBox>
   );
 }
 
 export default App;
+
+const AppBox = styled.div`
+  /* width: 1440px;
+  margin: 0 auto;
+  height: 100vh; */
+`;
