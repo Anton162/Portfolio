@@ -11,6 +11,7 @@ import { Works } from "./layout/section/works/Works";
 function App() {
   return (
     <AppBox className="App">
+      <Header />
       <Main />
       <Skills />
       <Works />

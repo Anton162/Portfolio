@@ -7,8 +7,12 @@ import { Header } from "../../header/Header";
 export const Main = () => {
   return (
     <StyledMain>
-      <Header />
-      <FlexWrapper align={"center"} justify={"space-around"}>
+      <FlexWrapper
+        align={"center"}
+        justify={"space-around"}
+        margin="0"
+        margin_top="0"
+      >
         <BoxDescription>
           <MainTitle>Hello! I&rsquo;m Anton Petukh</MainTitle>
           <MainDescription>
@@ -24,11 +28,10 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   width: 100%;
-  min-height: 1000px;
+  min-height: 743px;
   background: url(${photo}) no-repeat center right;
   background-size: 100% 50%;
   background: var(--blue, rgba(34, 42, 54, 0.95));
-  position: relative;
 `;
 
 const Photo = styled.img`

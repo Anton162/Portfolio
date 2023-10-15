@@ -8,7 +8,12 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 export const Header = () => {
   return (
     <StyledHeader>
-      <FlexWrapper align={"center"} justify={"space-evenly"} margin_top="0px">
+      <FlexWrapper
+        align={"center"}
+        justify={"space-evenly"}
+        margin_top="0px"
+        margin="0px"
+      >
         <Logo />
         <Menu />
         <Button />
@@ -20,4 +25,5 @@ export const Header = () => {
 const StyledHeader = styled.header`
   width: 100%;
   height: 140px;
+  position: fixed;
 `;
