@@ -1,10 +1,16 @@
 import React from "react";
 import { Icon } from "../icon/Icon";
+import styled from "styled-components";
 
 export const Logo = () => {
   return (
-    <a href="#">
-      <Icon iconId={"logo"} />
-    </a>
+    <LogoLink href="#">
+      <Icon iconId={"twitter"} width="50" height="50" viewBox="0 0 50px 50px" />
+    </LogoLink>
   );
 };
+
+const LogoLink = styled.a`
+  align-self: center;
+  margin-top: 25px;
+`;

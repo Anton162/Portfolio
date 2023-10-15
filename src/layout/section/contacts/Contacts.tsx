@@ -14,7 +14,7 @@ export const Contacts = () => {
           </Text>
           <SocialList>
             <SocialItem>
-              <SocialLink>
+              <SocialLink href="#">
                 <Icon
                   height={"25px"}
                   width={"25px"}
@@ -24,7 +24,7 @@ export const Contacts = () => {
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink>
+              <SocialLink href="#">
                 <Icon
                   height={"25px"}
                   width={"25px"}
@@ -34,17 +34,7 @@ export const Contacts = () => {
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink>
-                <Icon
-                  height={"25px"}
-                  width={"25px"}
-                  viewBox={"0 0 25px 25px"}
-                  iconId={"twitter"}
-                />
-              </SocialLink>
-            </SocialItem>
-            <SocialItem>
-              <SocialLink>
+              <SocialLink href="#">
                 <Icon
                   height={"25px"}
                   width={"25px"}
@@ -54,7 +44,7 @@ export const Contacts = () => {
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink>
+              <SocialLink href="#">
                 <Icon
                   height={"25px"}
                   width={"25px"}
@@ -64,7 +54,7 @@ export const Contacts = () => {
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink>
+              <SocialLink href="#">
                 <Icon
                   height={"25px"}
                   width={"25px"}
