@@ -23,7 +23,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  padding: 50px 0 50px 0;
-  height: 100px;
+  height: 200px;
+  padding-top: 50px;
   background: #000;
 `;

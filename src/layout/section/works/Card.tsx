@@ -10,7 +10,7 @@ type CardPropsType = {
 export const Card = (props: CardPropsType) => {
   return (
     <StyledCard>
-      <Icon iconId={props.iconId} />
+      <Icon iconId={props.iconId} width="20" height="20" viewBox="0 0 30 30" />
       <CardText>{props.title}</CardText>
     </StyledCard>
   );

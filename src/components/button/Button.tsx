@@ -12,4 +12,6 @@ const StyledButton = styled.button`
   font-size: 20px;
   color: #fff;
   font-weight: 500;
+  border: none;
+  cursor: pointer;
 `;
