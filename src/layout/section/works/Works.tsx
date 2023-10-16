@@ -13,10 +13,7 @@ export const Works = () => {
         </ExperienceSkill>
         <CardSection>
           <SecondTitle>
-            Front-End Developer, React Specialist, with a Focus on UI/UX,
-            experienced in building responsive web applications and user
-            interfaces, and proficient in modern web development technologies
-            and tools.
+            Developer and Designer, specialized in UI/UX and Web Developer
           </SecondTitle>
           <CardBox>
             <Card iconId={"computer"} title={"Front End Developer"} />
@@ -35,6 +32,8 @@ const CardBox = styled.div`
 `;
 
 const StyledWorks = styled.section`
+  height: 659px;
+  padding: 100px 0 100px 0;
   background: #222a36;
   display: flex;
   justify-content: space-between;

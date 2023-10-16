@@ -8,7 +8,7 @@ import { Icon } from "../../../components/icon/Icon";
 export const About = () => {
   return (
     <StyledAbout>
-      <FlexWrapper justify={"space-evenly"} margin_top="0px" margin="0px">
+      <FlexWrapper justify={"space-evenly"}>
         <Slider />
         <Statistics />
       </FlexWrapper>
@@ -17,5 +17,7 @@ export const About = () => {
 };
 
 const StyledAbout = styled.section`
+  height: 650px;
+  padding: 100px 0 100px 0;
   background: rgba(34, 42, 54, 0.95);
 `;

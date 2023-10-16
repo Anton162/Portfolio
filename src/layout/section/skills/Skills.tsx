@@ -6,12 +6,7 @@ import { Icon } from "../../../components/icon/Icon";
 export const Skills = () => {
   return (
     <StyledSkills>
-      <FlexWrapper
-        justify="space-between"
-        align="center"
-        margin="0px"
-        margin_top="0px"
-      >
+      <FlexWrapper justify="space-between" align="center">
         <Icon iconId={"figma"} />
         <Icon iconId={"html"} />
         <Icon iconId={"css"} />

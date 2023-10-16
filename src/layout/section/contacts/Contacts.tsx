@@ -83,6 +83,7 @@ const Text = styled.span`
   color: #fff;
   font-size: 100px;
   font-weight: 700;
+  margin-bottom: 31px;
 `;
 
 const SocialList = styled.ul`
@@ -94,4 +95,8 @@ const SocialItem = styled.li``;
 
 const SocialLink = styled.a``;
 
-const LeftColumn = styled.div``;
+const LeftColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+`;

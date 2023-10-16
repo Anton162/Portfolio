@@ -7,7 +7,8 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.div`
-  height: 100px;
+  height: 200px;
+  padding: 100px 0 50px 0;
   background: #000;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;

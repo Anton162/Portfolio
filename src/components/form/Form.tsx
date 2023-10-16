@@ -24,6 +24,8 @@ const StyleText = styled.h2`
   color: #fff;
   font-size: 30px;
   font-weight: 500;
+  margin-bottom: 50px;
+  margin-top: 50px;
 `;
 
 const StyleFormInput = styled.input`

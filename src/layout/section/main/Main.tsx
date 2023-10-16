@@ -8,12 +8,7 @@ import { DowloadButton } from "../../../components/button/CVButton";
 export const Main = () => {
   return (
     <StyledMain>
-      <FlexWrapper
-        align={"center"}
-        justify={"space-around"}
-        margin="0"
-        margin_top="0"
-      >
+      <FlexWrapper align={"center"} justify={"space-around"}>
         <BoxDescription>
           <MainTitle>Hello! I&rsquo;m Anton Petukh</MainTitle>
           <Description>

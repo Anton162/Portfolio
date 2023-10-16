@@ -26,6 +26,17 @@ const StyledCard = styled.div`
   align-items: flex-start;
   padding: 10px;
   position: relative;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #676cdb;
+  }
 `;
 
-const CardText = styled.h4``;
+const CardText = styled.h4`
+  width: 106px;
+  color: var(--blue-old, #222a36);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+`;
