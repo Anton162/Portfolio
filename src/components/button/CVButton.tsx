@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/Icon";
+import { theme } from "../../styled/Theme";
 
 export const DowloadButton = () => {
   return (
@@ -13,15 +14,19 @@ export const DowloadButton = () => {
 
 const StyledButton = styled.button`
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 20px 30px;
   justify-content: center;
   align-items: center;
   gap: 5px;
   background: none;
   border: none;
-  color: #fff;
+  color: ${theme.colors.fontMain};
   font-size: 20px;
   font-weight: 400;
   text-decoration-line: underline;
   cursor: pointer;
+
+  :hover {
+    background-color: ${theme.colors.cardSecondaryBg};
+  }
 `;

@@ -4,6 +4,7 @@ import photo from "../../../assets/image/main_bg.webp";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { EmailButton } from "../../../components/button/EmailButton";
 import { DowloadButton } from "../../../components/button/CVButton";
+import { theme } from "../../../styled/Theme";
 
 export const Main = () => {
   return (
@@ -13,8 +14,9 @@ export const Main = () => {
           <MainTitle>Hello! I&rsquo;m Anton Petukh</MainTitle>
           <Description>
             <MainDescription>
-              I&rsquo;am freelance web developer based in Poland who loves to
-              craft attractive design experiences for the web.
+              I&rsquo;am freelance <TextColor>web developer</TextColor> based in
+              Poland who loves to craft attractive design experiences for the
+              web.
             </MainDescription>
             <EmailButton />
             <DowloadButton />
@@ -30,7 +32,7 @@ const StyledMain = styled.div`
   display: flex;
   width: 100%;
   min-height: 743px;
-  background: var(--blue, rgba(34, 42, 54, 0.95));
+  background: ${theme.colors.primaryBg};
 `;
 
 const Photo = styled.img`
@@ -41,21 +43,24 @@ const Photo = styled.img`
 `;
 
 const MainTitle = styled.h1`
-  color: #fff;
+  font-family: Playfair Display;
   font-size: 90px;
   font-weight: 700;
 `;
 
 const MainDescription = styled.h2`
-  color: rgba(255, 255, 255, 0.5);
+  color: ${theme.colors.fontDescription};
   font-size: 20px;
   font-weight: 400;
   flex-wrap: wrap;
   margin-bottom: 30px;
 `;
 
+const TextColor = styled.span`
+  color: ${theme.colors.fontMain};
+`;
+
 const BoxDescription = styled.div`
-  /* width: 720px; */
   padding: 0 118px 0 118px;
 `;
 

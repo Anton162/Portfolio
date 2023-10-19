@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { SendButton } from "../button/SendButton";
+import { ButtonArrowRight } from "../button/ButtonArrowRight";
 
 export const Form = () => {
   return (
@@ -10,6 +12,7 @@ export const Form = () => {
       <StyleFormInput type="text" />
       <StyleText>Tell about the project:</StyleText>
       <StyleFormInput type="text" />
+      <SendButton />
     </StyledForm>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import styled from "styled-components";
+import { theme } from "../../styled/Theme";
 
 export const Footer = () => {
   return <StyledFooter>Created by Anton | All Reserved! 2023</StyledFooter>;
@@ -9,8 +10,8 @@ export const Footer = () => {
 const StyledFooter = styled.div`
   height: 200px;
   padding: 100px 0 50px 0;
-  background: #000;
-  color: rgba(255, 255, 255, 0.5);
+  background: ${theme.colors.secondaryBg};
+  color: ${theme.colors.fontDescription};
   text-align: center;
   font-size: 20px;
   font-weight: 500;

@@ -39,8 +39,8 @@ const Slide = styled.div`
 `;
 
 const Text = styled.p`
+  margin-top: 77px;
   width: 490px;
-  color: #fff;
   font-size: 20px;
   font-weight: 700;
   line-height: 180%;

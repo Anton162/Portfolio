@@ -4,20 +4,23 @@ import { Slider } from "../../../components/slider/Slider";
 import { Statistics } from "../../../components/statistics/Statistics";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Icon } from "../../../components/icon/Icon";
+import { theme } from "../../../styled/Theme";
+import { Container } from "../../../components/Container";
 
 export const About = () => {
   return (
     <StyledAbout>
-      <FlexWrapper justify={"space-evenly"}>
-        <Slider />
-        <Statistics />
-      </FlexWrapper>
+      <Container>
+        <FlexWrapper justify={"space-between"}>
+          <Slider />
+          <Statistics />
+        </FlexWrapper>
+      </Container>
     </StyledAbout>
   );
 };
 
 const StyledAbout = styled.section`
-  height: 650px;
   padding: 100px 0 100px 0;
-  background: rgba(34, 42, 54, 0.95);
+  background: ${theme.colors.fourthBg};
 `;

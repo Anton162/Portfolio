@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/Icon";
+import { theme } from "../../styled/Theme";
 
 export const EmailButton = () => {
   return (
@@ -13,13 +14,19 @@ export const EmailButton = () => {
 
 const StyledButton = styled.button`
   display: inline-flex;
-  padding: 20px 40px;
+  padding: 20px 30px;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  background: var(--pp1-purple, #676cdb);
-  color: #fff;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: ${theme.colors.fontMain};
   font-size: 20px;
   font-weight: 400;
-  border: none;
+
   cursor: pointer;
+
+  :hover {
+    background-color: ${theme.colors.cardSecondaryBg};
+  }
 `;
