@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { SendButton } from "../button/SendButton";
-import { ButtonArrowRight } from "../button/ButtonArrowRight";
+import { theme } from "../../styled/Theme";
 
 export const Form = () => {
   return (
@@ -9,9 +9,9 @@ export const Form = () => {
       <StyleText>Your name:</StyleText>
       <StyleFormInput type="text" />
       <StyleText>Your email address:</StyleText>
-      <StyleFormInput type="text" />
+      <StyleFormInput type="email" />
       <StyleText>Tell about the project:</StyleText>
-      <StyleFormInput type="text" />
+      <StyleFormInput as={"textarea"} />
       <SendButton />
     </StyledForm>
   );
@@ -21,20 +21,24 @@ const StyledForm = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 25px;
 `;
 
 const StyleText = styled.h2`
-  color: #fff;
+  color: ${theme.colors.fontMain};
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  /* margin-bottom: 50px;
+  margin-top: 50px; */
 `;
 
 const StyleFormInput = styled.input`
   width: 500px;
-  color: white;
+  font-family: Poppins;
+  color: ${theme.colors.fontMain};
   background: transparent;
-  border: 0;
-  border-bottom: 1px solid #fff;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid ${theme.colors.fontMain};
+  font-size: 25px;
 `;

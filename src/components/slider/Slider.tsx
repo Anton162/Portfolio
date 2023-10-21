@@ -3,6 +3,7 @@ import styled from "styled-components";
 import photo from "../../assets/image/main_bg.webp";
 import { ButtonArrowLeft } from "../button/ButtonArrowLeft";
 import { ButtonArrowRight } from "../button/ButtonArrowRight";
+import { theme } from "../../styled/Theme";
 
 export const Slider = () => {
   return (
@@ -10,6 +11,7 @@ export const Slider = () => {
       <Slide>
         <Photo src={photo} />
         <StyledBox>
+          <Quote>“</Quote>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
@@ -38,8 +40,16 @@ const Slide = styled.div`
   align-items: center;
 `;
 
+const Quote = styled.p`
+  color: ${theme.colors.fontDescription};
+  width: 47px;
+  height: 77px;
+  font-family: Playfair Display;
+  font-size: 100px;
+  font-weight: 700;
+`;
+
 const Text = styled.p`
-  margin-top: 77px;
   width: 490px;
   font-size: 20px;
   font-weight: 700;

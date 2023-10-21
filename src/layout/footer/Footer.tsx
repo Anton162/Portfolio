@@ -2,9 +2,16 @@ import React from "react";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import styled from "styled-components";
 import { theme } from "../../styled/Theme";
+import { Container } from "../../components/Container";
 
 export const Footer = () => {
-  return <StyledFooter>Created by Anton | All Reserved! 2023</StyledFooter>;
+  return (
+    <StyledFooter>
+      <Container>
+        Created by <Link href="#">Anton</Link> | All Reserved! 2023
+      </Container>
+    </StyledFooter>
+  );
 };
 
 const StyledFooter = styled.div`
@@ -16,4 +23,8 @@ const StyledFooter = styled.div`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.3px;
+`;
+
+const Link = styled.a`
+  color: ${theme.colors.fontMain};
 `;

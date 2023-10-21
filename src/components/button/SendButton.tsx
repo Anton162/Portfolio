@@ -5,7 +5,7 @@ import { Icon } from "../icon/Icon";
 
 export const SendButton = () => {
   return (
-    <StyleButton>
+    <StyleButton type="submit">
       Send
       <Icon iconId="arrow-right" width="26" height="24" viewBox="0 0 30 30" />
     </StyleButton>
@@ -19,7 +19,7 @@ const StyleButton = styled.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   background: none;
   border: none;
   color: ${theme.colors.fontMain};
