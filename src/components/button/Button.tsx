@@ -20,6 +20,10 @@ const StyledButton = styled.button`
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 
+  @media ${theme.media.tablet} {
+    display: none;
+  }
+
   :hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);

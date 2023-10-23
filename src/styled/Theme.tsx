@@ -12,4 +12,9 @@ export const theme = {
     fontDescription: "rgba(255, 255, 255, 0.5)",
     fontCard: "var(--blue-old, #222A36)",
   },
+
+  media: {
+    tablet: "screen and (max-width: 768px)",
+    mobile: "screen and (max-width: 576px)",
+  },
 };

@@ -22,6 +22,11 @@ const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
     gap: 40px;
+    justify-content: center;
+  }
+
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `;
 
