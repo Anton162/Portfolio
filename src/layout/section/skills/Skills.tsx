@@ -9,12 +9,13 @@ export const Skills = () => {
   return (
     <StyledSkills>
       <Container>
-        <FlexWrapper justify="space-between" align="center">
+        <FlexWrapper justify="space-between" align="center" wrap="wrap">
           <Icon iconId={"figma"} />
           <Icon iconId={"html"} />
           <Icon iconId={"css"} />
-          <Icon iconId={"sass"} />
+          <Icon iconId={"typeScript"} viewBox="0 0 52 52" />
           <Icon iconId={"react"} />
+          <Icon iconId={"styledComponents"} viewBox="0 0 52 52" />
         </FlexWrapper>
       </Container>
     </StyledSkills>
@@ -22,8 +23,9 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
+  display: flex;
+  flex-grow: 1;
   align-items: center;
   padding: 50px 0;
-  height: 200px;
   background: ${theme.colors.secondaryBg};
 `;

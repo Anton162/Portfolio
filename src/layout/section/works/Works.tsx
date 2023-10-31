@@ -9,7 +9,7 @@ export const Works = () => {
   return (
     <StyledWorks>
       <Container>
-        <FlexWrapper>
+        <FlexWrapper justify="space-between">
           <ExperienceSkill>
             <Text>1+</Text>
             <ExperienceText>Years Experience Working</ExperienceText>
@@ -32,13 +32,18 @@ export const Works = () => {
 
 const CardBox = styled.div`
   display: flex;
+  justify-content: space-between;
   gap: 15px;
 `;
 
 const StyledWorks = styled.section`
-  height: 659px;
   padding: 100px 0 100px 0;
   background: ${theme.colors.thirdBg};
+  @media ${theme.media.tablet} {
+    ${FlexWrapper} {
+      flex-wrap: wrap;
+    }
+  }
 `;
 
 const SecondTitle = styled.h2`

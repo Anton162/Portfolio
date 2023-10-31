@@ -35,8 +35,8 @@ const StyledSlider = styled.div`
 
 const Slide = styled.div`
   max-width: 894px;
-  height: 393px;
   display: flex;
+
   align-items: center;
 `;
 

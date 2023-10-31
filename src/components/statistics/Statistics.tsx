@@ -16,8 +16,8 @@ export const Statistics = () => {
 };
 
 const StyledStatistics = styled.div`
-  width: 194px;
-  height: 450px;
+  max-width: 194px;
+  height: 100%;
 `;
 
 const PrimaryText = styled.h2`
