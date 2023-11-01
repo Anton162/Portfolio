@@ -35,6 +35,11 @@ const StyledMain = styled.div`
   min-height: 743px;
   background: ${theme.colors.primaryBg};
 
+  @media ${theme.media.dextop} {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   @media ${theme.media.tablet} {
     flex-direction: column;
     align-items: center;

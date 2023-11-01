@@ -28,8 +28,6 @@ const StyleText = styled.h2`
   color: ${theme.colors.fontMain};
   font-size: 30px;
   font-weight: 500;
-  /* margin-bottom: 50px;
-  margin-top: 50px; */
 `;
 
 const StyleFormInput = styled.input`

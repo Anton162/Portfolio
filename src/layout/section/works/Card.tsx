@@ -28,6 +28,7 @@ const StyledCard = styled.div`
   padding: 0 0 10px 10px;
   position: relative;
   transition: background-color 0.3s;
+  gap: 15px;
 
   &:hover {
     background-color: ${theme.colors.cardSecondaryBg};
