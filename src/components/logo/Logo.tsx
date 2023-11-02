@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "../icon/Icon";
 import styled from "styled-components";
+import { theme } from "../../styled/Theme";
 
 export const Logo = () => {
   return (
@@ -13,4 +14,8 @@ export const Logo = () => {
 const LogoLink = styled.a`
   align-self: center;
   margin-top: 25px;
+
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 `;

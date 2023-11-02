@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Icon } from "../../../components/icon/Icon";
 import { theme } from "../../../styled/Theme";
 import { Container } from "../../../components/Container";
@@ -9,18 +8,28 @@ export const Skills = () => {
   return (
     <StyledSkills>
       <Container>
-        <FlexWrapper justify="space-between" align="center" wrap="wrap">
+        <SkillsWrapper>
           <Icon iconId={"figma"} />
           <Icon iconId={"html"} />
           <Icon iconId={"css"} />
           <Icon iconId={"typeScript"} viewBox="0 0 52 52" />
           <Icon iconId={"react"} />
           <Icon iconId={"styledComponents"} viewBox="0 0 52 52" />
-        </FlexWrapper>
+        </SkillsWrapper>
       </Container>
     </StyledSkills>
   );
 };
+
+const SkillsWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media ${theme.media.mobile} {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
 const StyledSkills = styled.section`
   display: flex;

@@ -30,6 +30,10 @@ const StyledMobileMenu = styled.nav`
   @media ${theme.media.tablet} {
     display: block;
   }
+
+  @media ${theme.media.mobile} {
+    display: block;
+  }
 `;
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
@@ -61,7 +65,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
   top: -100px;
-  right: -100px;
+  right: -50px;
   width: 200px;
   height: 200px;
   z-index: 99999;

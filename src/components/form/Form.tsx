@@ -18,16 +18,31 @@ export const Form = () => {
 };
 
 const StyledForm = styled.div`
+  max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 25px;
+
+  @media ${theme.media.desktop} {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const StyleText = styled.h2`
   color: ${theme.colors.fontMain};
   font-size: 30px;
   font-weight: 500;
+
+  @media ${theme.media.desktop} {
+    font-size: 20px;
+  }
+  @media ${theme.media.mobile} {
+    text-align: center;
+  }
 `;
 
 const StyleFormInput = styled.input`

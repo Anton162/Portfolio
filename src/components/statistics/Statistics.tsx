@@ -19,17 +19,25 @@ const StyledStatistics = styled.div`
   max-width: 194px;
   height: 100%;
 
-  @media ${theme.media.dextop} {
-    display: flex;
+  @media ${theme.media.desktop} {
+    display: none;
+    /* display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
-    gap: 40px;
+
+    gap: 40px; */
   }
 
-  @media ${theme.media.tablet} {
+  /* @media ${theme.media.tablet} {
     gap: 20px;
+    flex-wrap: wrap;
   }
+
+  @media ${theme.media.mobile} {
+    flex-wrap: wrap;
+    gap: 10px;
+  } */
 `;
 
 const PrimaryText = styled.h2`
@@ -38,7 +46,7 @@ const PrimaryText = styled.h2`
   font-weight: 700;
   margin-bottom: 10px;
 
-  @media ${theme.media.dextop} {
+  @media ${theme.media.desktop} {
     font-size: 25px;
   }
 `;

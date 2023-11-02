@@ -23,10 +23,13 @@ const StyledHeaderMenu = styled.nav`
     display: flex;
     gap: 40px;
     justify-content: center;
-  }
 
-  @media ${theme.media.tablet} {
-    display: none;
+    @media ${theme.media.tablet} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0 20px;
+    }
   }
 `;
 

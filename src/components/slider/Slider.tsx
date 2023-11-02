@@ -29,15 +29,18 @@ export const Slider = () => {
   );
 };
 
-const StyledSlider = styled.div`
-  border: 1px solid red;
-`;
+const StyledSlider = styled.div``;
 
 const Slide = styled.div`
   max-width: 894px;
+  width: 100%;
   display: flex;
 
   align-items: center;
+
+  @media ${theme.media.desktop} {
+    flex-direction: column;
+  }
 `;
 
 const Quote = styled.p`
@@ -47,13 +50,27 @@ const Quote = styled.p`
   font-family: Playfair Display;
   font-size: 100px;
   font-weight: 700;
+
+  @media ${theme.media.desktop} {
+    font-size: 70px;
+    height: 60px;
+  }
 `;
 
 const Text = styled.p`
-  width: 490px;
+  max-width: 490px;
+  width: 100%;
   font-size: 20px;
   font-weight: 700;
-  line-height: 180%;
+
+  @media ${theme.media.desktop} {
+    font-size: 18px;
+  }
+
+  @media ${theme.media.mobile} {
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
 `;
 
 const Photo = styled.img`
@@ -62,12 +79,24 @@ const Photo = styled.img`
 `;
 
 const ButtonBox = styled.div`
-  width: 95px;
+  max-width: 95px;
+  width: 100%;
   display: flex;
   gap: 15px;
   margin-top: 15px;
+
+  @media ${theme.media.desktop} {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 `;
 
 const StyledBox = styled.div`
   margin-left: 15px;
+
+  @media ${theme.media.desktop} {
+    padding: 0 20px;
+  }
 `;

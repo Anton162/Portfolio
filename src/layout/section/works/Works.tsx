@@ -34,7 +34,7 @@ const WorksWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media ${theme.media.dextop} {
+  @media ${theme.media.desktop} {
     flex-direction: column;
   }
 `;
@@ -61,10 +61,11 @@ const SecondTitle = styled.h2`
   font-size: 40px;
   font-weight: 700;
 
-  @media ${theme.media.dextop} {
+  @media ${theme.media.desktop} {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 35px;
+    padding: 0 20px;
   }
 `;
 
@@ -73,7 +74,7 @@ const CardSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  @media ${theme.media.dextop} {
+  @media ${theme.media.desktop} {
     max-width: 100%;
   }
 `;
@@ -82,7 +83,7 @@ const ExperienceSkill = styled.div`
   max-width: 210px;
   margin-top: 21px;
 
-  @media ${theme.media.dextop} {
+  @media ${theme.media.desktop} {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -95,7 +96,7 @@ const Text = styled.span`
   font-size: 100px;
   font-weight: 700;
 
-  @media ${theme.media.dextop} {
+  @media ${theme.media.desktop} {
     font-size: 80px;
   }
   @media ${theme.media.tablet} {

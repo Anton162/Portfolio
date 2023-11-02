@@ -32,10 +32,11 @@ export const Main = () => {
 const StyledMain = styled.div`
   display: flex;
   width: 100%;
+  padding-top: 120px;
   min-height: 743px;
   background: ${theme.colors.primaryBg};
 
-  @media ${theme.media.dextop} {
+  @media ${theme.media.desktop} {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -52,19 +53,32 @@ const Photo = styled.img`
   object-fit: cover;
   z-index: 0;
 
+  @media ${theme.media.desktop} {
+    width: 549px;
+    height: 750px;
+    padding: 50px 0;
+  }
+
   @media ${theme.media.tablet} {
     width: 310px;
     height: 380px;
+    padding: 50px 0;
   }
 `;
 
 const MainTitle = styled.h1`
   ${font({
     family: "'Playfair Display', sans-serif",
-    weight: 700,
+    weight: 900,
     Fmax: 90,
     Fmin: 50,
   })}
+
+  @media ${theme.media.desktop} {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
 
   @media ${theme.media.tablet} {
     padding: 0 10px;
@@ -95,4 +109,10 @@ const BoxDescription = styled.div`
 const Description = styled.div`
   width: 404px;
   height: 202px;
+
+  @media ${theme.media.desktop} {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
 `;
