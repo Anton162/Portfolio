@@ -54,4 +54,9 @@ const StyleFormInput = styled.input`
   outline: none;
   border-bottom: 1px solid ${theme.colors.fontMain};
   font-size: 25px;
+
+  @media ${theme.media.mobile} {
+    justify-content: center;
+    max-width: 400px;
+  }
 `;

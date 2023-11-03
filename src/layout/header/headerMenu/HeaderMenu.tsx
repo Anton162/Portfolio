@@ -25,10 +25,11 @@ const StyledHeaderMenu = styled.nav`
     justify-content: center;
 
     @media ${theme.media.tablet} {
-      flex-direction: column;
+      display: none;
+      /* flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 30px 0 20px;
+      padding: 30px 0 20px; */
     }
   }
 `;

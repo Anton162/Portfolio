@@ -10,7 +10,7 @@ import { font } from "../../../styled/Common";
 export const Main = () => {
   return (
     <StyledMain>
-      <FlexWrapper align={"center"} justify={"space-around"}>
+      <MainWrapper>
         <BoxDescription>
           <MainTitle>Hello! I&rsquo;m Anton Petukh</MainTitle>
           <Description>
@@ -23,11 +23,17 @@ export const Main = () => {
             <DowloadButton />
           </Description>
         </BoxDescription>
-      </FlexWrapper>
+      </MainWrapper>
       <Photo src={photo} />
     </StyledMain>
   );
 };
+
+const MainWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
 
 const StyledMain = styled.div`
   display: flex;
