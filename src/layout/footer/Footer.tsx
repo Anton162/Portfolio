@@ -14,6 +14,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
+  max-width: 100%;
   padding: 100px 0 50px 0;
   background: ${theme.colors.secondaryBg};
   color: ${theme.colors.fontDescription};

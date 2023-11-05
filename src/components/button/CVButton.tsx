@@ -29,4 +29,8 @@ const StyledButton = styled.button`
   :hover {
     background-color: ${theme.colors.cardSecondaryBg};
   }
+  @media ${theme.media.mobile} {
+    font-size: 15px;
+    padding: 15px 25px;
+  }
 `;

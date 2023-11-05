@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import photo1 from "../../assets/image/slide1.webp";
 import photo2 from "../../assets/image/slide2.webp";
+import photo3 from "../../assets/image/slide3.webp";
 import { ButtonArrowLeft } from "../button/ButtonArrowLeft";
 import { ButtonArrowRight } from "../button/ButtonArrowRight";
 import { theme } from "../../styled/Theme";
@@ -9,13 +10,16 @@ import { theme } from "../../styled/Theme";
 const slidesData = [
   {
     image: photo1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metusnec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent",
+    text: " I enthusiastically explore the realm of React and TypeScript development. With several years of experience, I craft web applications that harness the power of these technologies, enabling me to efficiently tackle tasks and build robust interactive web applications.",
   },
   {
     image: photo2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metusnec fringilla accumsan",
+    text: " My relentless thirst for knowledge and pursuit of excellence make me a better developer. I learn every day, delving into new concepts and practices, engaging in professional courses, and sharing insights with peers.",
   },
-  // Добавьте другие слайды с соответствующими текстами
+  {
+    image: photo3,
+    text: " My ardor for development manifests in my ability to craft creative and distinctive solutions for challenges. I firmly believe that every problem has a non-conventional solution, and I find inspiration in approaching things differently and motivating others to do the same.",
+  },
 ];
 
 export const Slider: React.FC = () => {
@@ -93,8 +97,17 @@ const Text = styled.p`
 `;
 
 const Photo = styled.img`
-  height: 400px;
-  width: 300px;
+  height: 100%;
+  width: 389px;
+  @media ${theme.media.tablet} {
+    height: 400px;
+    width: 300px;
+  }
+
+  @media ${theme.media.mobile} {
+    height: 300px;
+    width: 200px;
+  }
 `;
 
 const ButtonBox = styled.div`

@@ -26,9 +26,11 @@ const StyledForm = styled.div`
   gap: 25px;
 
   @media ${theme.media.desktop} {
-    padding: 20px;
     justify-content: center;
     align-items: center;
+  }
+  @media ${theme.media.desktop} {
+    margin: 0 auto;
   }
 `;
 
@@ -55,8 +57,14 @@ const StyleFormInput = styled.input`
   border-bottom: 1px solid ${theme.colors.fontMain};
   font-size: 25px;
 
+  @media ${theme.media.tablet} {
+    justify-content: center;
+
+    max-width: 400px;
+  }
+
   @media ${theme.media.mobile} {
     justify-content: center;
-    max-width: 400px;
+    max-width: 330px;
   }
 `;
