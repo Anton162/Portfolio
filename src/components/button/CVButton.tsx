@@ -25,9 +25,11 @@ const StyledButton = styled.button`
   font-weight: 400;
   text-decoration-line: underline;
   cursor: pointer;
+  transition: transform 0.3s;
 
   :hover {
     background-color: ${theme.colors.cardSecondaryBg};
+    transform: scale(1.1);
   }
   @media ${theme.media.mobile} {
     font-size: 15px;

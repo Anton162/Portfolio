@@ -8,7 +8,7 @@ import { Container } from "../../../components/Container";
 
 export const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <Container>
         <FlexAboutWrapper>
           <Slider />

@@ -9,7 +9,7 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
         {props.menuItems.map((item: string, index: number) => {
           return (
             <ListItem key={index}>
-              <Link href="">{item}</Link>
+              <NavLink href={`#${item}`}>{item}</NavLink>
             </ListItem>
           );
         })}
@@ -34,9 +34,14 @@ const StyledHeaderMenu = styled.nav`
   }
 `;
 
-const ListItem = styled.li``;
+const ListItem = styled.li`
+  transition: transform 0.3s ease-in-out;
+  :hover {
+    transform: scaleY(0.8);
+  }
+`;
 
-const Link = styled.a`
+const NavLink = styled.a`
   font-size: 20px;
   font-weight: 500;
   color: ${theme.colors.fontMain};

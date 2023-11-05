@@ -59,7 +59,7 @@ const Slide = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  transition: transform 1s ease-in-out;
+  transition: transform 2s ease-in-out;
 
   @media ${theme.media.desktop} {
     flex-direction: column;

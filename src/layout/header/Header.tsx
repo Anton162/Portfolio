@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Logo } from "../../components/logo/Logo";
 import { Button } from "../../components/button/Button";
 import { Container } from "../../components/Container";
@@ -9,8 +9,24 @@ import { S } from "./Header_Styles";
 const items = ["Home", "About", "Services", "Contacts"];
 
 export const Header: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <S.Header>
+    <S.Header className={isScrolled ? "scrolled" : ""}>
       <Container>
         <S.HeaderWrapper>
           <Logo />

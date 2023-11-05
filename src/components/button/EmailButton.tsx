@@ -23,11 +23,12 @@ const StyledButton = styled.button`
   color: ${theme.colors.fontMain};
   font-size: 20px;
   font-weight: 400;
-
+  transition: transform 0.3s;
   cursor: pointer;
 
   :hover {
     background-color: ${theme.colors.cardSecondaryBg};
+    transform: scale(1.1);
   }
 
   @media ${theme.media.mobile} {

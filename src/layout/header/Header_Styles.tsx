@@ -20,6 +20,12 @@ const Header = styled.header`
   left: 0;
   z-index: 9999;
 
+  &.scrolled {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 1s ease;
+  }
+
   /* @media ${theme.media.tablet} {
     background-color: ${theme.colors.primaryBg};
   } */
