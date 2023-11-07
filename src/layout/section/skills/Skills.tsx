@@ -1,20 +1,32 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Icon } from "../../../components/icon/Icon";
 import { theme } from "../../../styled/Theme";
 import { Container } from "../../../components/Container";
 
 export const Skills = () => {
   return (
-    <StyledSkills>
+    <StyledSkills id="skills">
       <Container>
         <SkillsWrapper>
-          <Icon iconId={"figma"} />
-          <Icon iconId={"html"} />
-          <Icon iconId={"css"} />
-          <Icon iconId={"typeScript"} viewBox="0 0 52 52" />
-          <Icon iconId={"react"} />
-          <Icon iconId={"styledComponents"} viewBox="0 0 52 52" />
+          <IconWrapper>
+            <Icon iconId={"figma"} />
+          </IconWrapper>
+          <IconWrapper>
+            <Icon iconId={"html"} />
+          </IconWrapper>
+          <IconWrapper>
+            <Icon iconId={"css"} />
+          </IconWrapper>
+          <IconWrapper>
+            <Icon iconId={"typeScript"} viewBox="0 0 52 52" />
+          </IconWrapper>
+          <IconWrapper>
+            <Icon iconId={"react"} />
+          </IconWrapper>
+          <IconWrapper>
+            <Icon iconId={"styledComponents"} viewBox="0 0 52 52" />
+          </IconWrapper>
         </SkillsWrapper>
       </Container>
     </StyledSkills>
@@ -25,9 +37,20 @@ const SkillsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media ${theme.media.mobile} {
     flex-direction: column;
     align-items: center;
+  }
+`;
+
+const IconWrapper = styled.div`
+  transition: transform 0.7s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+    color: ${theme.colors.fontSecondary};
   }
 `;
 
@@ -37,4 +60,5 @@ const StyledSkills = styled.section`
   align-items: center;
   padding: 50px 0;
   background: ${theme.colors.secondaryBg};
+  overflow: hidden;
 `;

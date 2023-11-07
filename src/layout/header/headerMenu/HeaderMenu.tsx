@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../../../styled/Theme";
+import { Link } from "react-scroll";
 
 export const HeaderMenu = (props: { menuItems: Array<string> }) => {
   return (
@@ -9,7 +10,9 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
         {props.menuItems.map((item: string, index: number) => {
           return (
             <ListItem key={index}>
-              <NavLink href={`#${item}`}>{item}</NavLink>
+              <NavLink to={item.toLowerCase()} smooth={true}>
+                {item}
+              </NavLink>
             </ListItem>
           );
         })}
@@ -26,10 +29,6 @@ const StyledHeaderMenu = styled.nav`
 
     @media ${theme.media.tablet} {
       display: none;
-      /* flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 30px 0 20px; */
     }
   }
 `;
@@ -41,10 +40,11 @@ const ListItem = styled.li`
   }
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   font-size: 20px;
   font-weight: 500;
   color: ${theme.colors.fontMain};
+  cursor: pointer;
 
   :hover {
     color: ${theme.colors.fontSecondary};

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import { theme } from "../../../styled/Theme";
+import { Link } from "react-scroll";
 
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -13,12 +14,19 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
         <span></span>
       </BurgerButton>
 
-      <MobileMenuPopup isOpen={menuIsOpen}>
+      <MobileMenuPopup
+        isOpen={menuIsOpen}
+        onClick={() => {
+          setMenuIsOpen(false);
+        }}
+      >
         <ul>
           {props.menuItems.map((item: string, index: number) => {
             return (
               <ListItem key={index}>
-                <Link href="">{item}</Link>
+                <NavLink to={item.toLowerCase()} smooth={true}>
+                  {item}
+                </NavLink>
               </ListItem>
             );
           })}
@@ -127,10 +135,11 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
 const ListItem = styled.li``;
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   font-size: 20px;
   font-weight: 500;
   color: ${theme.colors.fontMain};
+  cursor: pointer;
 
   :hover {
     color: ${theme.colors.fontSecondary};

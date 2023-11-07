@@ -54,7 +54,6 @@ export const Slider: React.FC = () => {
 const StyledSlider = styled.div``;
 
 const Slide = styled.div`
-  border: 1px solid red;
   max-width: 894px;
   width: 100%;
   display: flex;
@@ -82,6 +81,7 @@ const Quote = styled.p`
 
 const Text = styled.p`
   max-width: 490px;
+  height: 165px;
   width: 100%;
   font-size: 20px;
   font-weight: 700;
@@ -93,6 +93,7 @@ const Text = styled.p`
   @media ${theme.media.mobile} {
     flex-wrap: wrap;
     font-size: 15px;
+    height: 185px;
   }
 `;
 
@@ -115,7 +116,7 @@ const ButtonBox = styled.div`
   width: 100%;
   display: flex;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 50px;
 
   @media ${theme.media.desktop} {
     justify-content: center;

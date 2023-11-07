@@ -152,11 +152,14 @@ const BoxDescription = styled.div`
 
 const Description = styled.div`
   width: 404px;
-  height: 202px;
 
   @media ${theme.media.desktop} {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+  }
+
+  @media ${theme.media.mobile} {
+    width: 370px;
   }
 `;

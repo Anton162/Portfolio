@@ -19,16 +19,15 @@ const Header = styled.header`
   right: 0;
   left: 0;
   z-index: 9999;
+  @media ${theme.media.tablet} {
+    transition: transform 0.3s, opacity 0.3s;
+  }
 
   &.scrolled {
     position: fixed;
     transform: translateY(-100%);
     transition: transform 1s ease;
   }
-
-  /* @media ${theme.media.tablet} {
-    background-color: ${theme.colors.primaryBg};
-  } */
 `;
 
 export const S = {

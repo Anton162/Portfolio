@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/Icon";
 import { animateScroll as scroll } from "react-scroll";
+import { theme } from "../../styled/Theme";
 
 export const GoTopBtn = () => {
   return (
@@ -18,6 +19,11 @@ const StyledGoTopBtn = styled.button`
   right: 30px;
   bottom: 30px;
   transition: transform 0.3s;
+
+  @media ${theme.media.mobile} {
+    right: 15px;
+    bottom: 15px;
+  }
 
   :hover {
     transform: scale(1.5);

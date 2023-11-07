@@ -19,9 +19,14 @@ export const Header: React.FC = () => {
         setIsScrolled(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
+    if (window.innerWidth > 768) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (window.innerWidth > 768) {
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
 

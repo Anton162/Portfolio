@@ -20,4 +20,9 @@ const ButtonArrow = styled.button`
   border: none;
   background: none;
   cursor: pointer;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;

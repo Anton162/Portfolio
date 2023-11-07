@@ -14,7 +14,7 @@ export const Contacts = () => {
             <Text>Let’s Connect</Text>
             <SocialList>
               <SocialItem>
-                <SocialLink href="#">
+                <SocialLink target="_blank" href="https://github.com/Anton162">
                   <Icon
                     height={"25px"}
                     width={"25px"}
@@ -24,7 +24,10 @@ export const Contacts = () => {
                 </SocialLink>
               </SocialItem>
               <SocialItem>
-                <SocialLink href="#">
+                <SocialLink
+                  target="_blank"
+                  href="www.linkedin.com/in/anton-petukh"
+                >
                   <Icon
                     height={"25px"}
                     width={"25px"}
@@ -34,7 +37,10 @@ export const Contacts = () => {
                 </SocialLink>
               </SocialItem>
               <SocialItem>
-                <SocialLink href="#">
+                <SocialLink
+                  target="_blank"
+                  href="http://instagram.com/antonnikulich"
+                >
                   <Icon
                     height={"25px"}
                     width={"25px"}
@@ -44,7 +50,7 @@ export const Contacts = () => {
                 </SocialLink>
               </SocialItem>
               <SocialItem>
-                <SocialLink href="#">
+                <SocialLink target="_blank" href="https://t.me/Bloodbleed">
                   <Icon
                     height={"25px"}
                     width={"25px"}
@@ -54,7 +60,10 @@ export const Contacts = () => {
                 </SocialLink>
               </SocialItem>
               <SocialItem>
-                <SocialLink href="#">
+                <SocialLink
+                  target="_blank"
+                  href="mailto:antonnikulich.petukh@gmail.com"
+                >
                   <Icon
                     height={"25px"}
                     width={"25px"}
@@ -117,7 +126,13 @@ const SocialList = styled.ul`
   gap: 50px;
 `;
 
-const SocialItem = styled.li``;
+const SocialItem = styled.li`
+  transition: transform 0.3s;
+  &:hover {
+    fill: #ff5733; // Измените цвет на ваш выбор
+    transform: scale(1.3); // Увеличьте размер по вашему усмотрению
+  }
+`;
 
 const SocialLink = styled.a``;
 

@@ -21,8 +21,17 @@ const StyledFooter = styled.footer`
   text-align: center;
   font-size: 20px;
   font-weight: 500;
+
+  @media ${theme.media.mobile} {
+    padding: 50px 0;
+    font-size: 17px;
+  }
 `;
 
 const Link = styled.a`
   color: ${theme.colors.fontMain};
+
+  :hover {
+    color: ${theme.colors.fontSecondary};
+  }
 `;

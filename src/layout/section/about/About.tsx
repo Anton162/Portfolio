@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Slider } from "../../../components/slider/Slider";
 import { Statistics } from "../../../components/statistics/Statistics";
-import { Icon } from "../../../components/icon/Icon";
 import { theme } from "../../../styled/Theme";
 import { Container } from "../../../components/Container";
 

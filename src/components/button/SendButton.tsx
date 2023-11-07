@@ -34,7 +34,7 @@ const StyleButton = styled.button`
   cursor: pointer;
   margin-top: 40px;
   padding: 10px;
-  transition: transform 0.3s;
+  transition: transform 2s;
 
   :hover {
     color: ${theme.colors.cardSecondaryBg};
