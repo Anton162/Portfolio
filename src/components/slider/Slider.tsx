@@ -58,7 +58,6 @@ const Slide = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  transition: transform 2s ease-in-out;
 
   @media ${theme.media.desktop} {
     flex-direction: column;
@@ -85,6 +84,10 @@ const Text = styled.p`
   width: 100%;
   font-size: 20px;
   font-weight: 700;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
 
   @media ${theme.media.desktop} {
     font-size: 18px;
@@ -100,6 +103,10 @@ const Text = styled.p`
 const Photo = styled.img`
   height: 100%;
   width: 389px;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateX(-10px);
+  }
   @media ${theme.media.tablet} {
     height: 400px;
     width: 300px;

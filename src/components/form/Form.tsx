@@ -1,23 +1,48 @@
-import React from "react";
+import React, { useRef, RefObject } from "react";
 import styled from "styled-components";
 import { SendButton } from "../button/SendButton";
 import { theme } from "../../styled/Theme";
+import emailjs from "@emailjs/browser";
 
-export const Form = () => {
+export const Form: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    if (!form.current) return;
+
+    emailjs
+      .sendForm(
+        "service_vte33ae",
+        "template_npp2i2r",
+        form.current,
+        "DQBRkiDlG3vlpci_s"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
-    <StyledForm>
+    <StyledForm ref={form} onSubmit={sendEmail}>
       <StyleText>Your name:</StyleText>
-      <StyleFormInput type="text" />
+      <StyleFormInput required type="text" name="user_name" />
       <StyleText>Your email address:</StyleText>
-      <StyleFormInput type="email" />
-      <StyleText>Tell about the project:</StyleText>
-      <StyleFormInput as={"textarea"} />
+      <StyleFormInput required type="email" name="email" />
+      <StyleText>Tell about the project: </StyleText>
+      <StyleFormInput required as="textarea" name="message" />
       <SendButton />
     </StyledForm>
   );
 };
 
-const StyledForm = styled.div`
+const StyledForm = styled.form`
   max-width: 500px;
   width: 100%;
   display: flex;

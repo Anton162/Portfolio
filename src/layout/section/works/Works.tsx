@@ -21,7 +21,7 @@ export const Works = () => {
             <CardBox>
               <Card iconId={"computer"} title={"Front End Developer"} />
               <Card iconId={"ux"} title={"UI/UX Designer"} />
-              <Card iconId={"ux"} title={"UI/UX Designer"} />
+              <Card iconId={"computer"} title={"Front End Developer"} />
             </CardBox>
           </CardSection>
         </WorksWrapper>

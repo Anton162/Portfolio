@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../../styled/Theme";
+import { animateScroll as scroll } from "react-scroll";
 
 export const Button = () => {
-  return <StyledButton>Contact Me</StyledButton>;
+  return (
+    <StyledButton onClick={scroll.scrollToBottom}>Contact Me</StyledButton>
+  );
 };
 
 const StyledButton = styled.button`

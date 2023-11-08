@@ -6,7 +6,7 @@ import { theme } from "../../styled/Theme";
 export const Logo = () => {
   return (
     <LogoLink href="#">
-      <Icon iconId={"twitter"} width="50" height="50" viewBox="0 0 50px 50px" />
+      <Icon iconId={"logo"} width="50" height="50" viewBox="0 0 50px 50px" />
     </LogoLink>
   );
 };
