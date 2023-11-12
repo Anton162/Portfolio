@@ -8,9 +8,9 @@ export const Statistics = () => {
       <PrimaryText>Satisfaction Clients</PrimaryText>
       <SecondaryText>100%</SecondaryText>
       <PrimaryText>Clients On Worldwide</PrimaryText>
-      <SecondaryText>+80</SecondaryText>
+      <SecondaryText>+2</SecondaryText>
       <PrimaryText>Projects Done</PrimaryText>
-      <SecondaryText>743</SecondaryText>
+      <SecondaryText>7</SecondaryText>
     </StyledStatistics>
   );
 };

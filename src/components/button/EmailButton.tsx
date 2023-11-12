@@ -6,18 +6,16 @@ import { theme } from "../../styled/Theme";
 export const EmailButton = () => {
   return (
     <StyledButton>
-      <Icon iconId="mail" height="20" width="20" viewBox="0 0 20px 20px" />
-      Email me
+      <LinkMail target="_blank" href="mailto:antonnikulich.petukh@gmail.com">
+        <Icon iconId="mail" height="20" width="20" viewBox="0 0 20px 20px" />
+        Email me
+      </LinkMail>
     </StyledButton>
   );
 };
 
 const StyledButton = styled.button`
-  display: inline-flex;
   padding: 20px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
   background: none;
   border: none;
   color: ${theme.colors.fontMain};
@@ -35,4 +33,11 @@ const StyledButton = styled.button`
     font-size: 15px;
     padding: 15px 25px;
   }
+`;
+
+const LinkMail = styled.a`
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 `;
