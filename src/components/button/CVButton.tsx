@@ -6,18 +6,24 @@ import { theme } from "../../styled/Theme";
 export const DowloadButton = () => {
   return (
     <StyledButton>
-      <Icon iconId="download" height="20" width="20" viewBox="0 0 20px 20px" />
-      Download CV
+      <LinkCv
+        target="_blank"
+        href="https://drive.google.com/file/d/1rXSJK2kFRdwXFDqi36PIxlzX7D8l0plF/view?usp=sharing"
+      >
+        <Icon
+          iconId="download"
+          height="20"
+          width="20"
+          viewBox="0 0 20px 20px"
+        />
+        Download CV
+      </LinkCv>
     </StyledButton>
   );
 };
 
 const StyledButton = styled.button`
-  display: inline-flex;
   padding: 20px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
   background: none;
   border: none;
   color: ${theme.colors.fontMain};
@@ -35,4 +41,11 @@ const StyledButton = styled.button`
     font-size: 15px;
     padding: 15px 25px;
   }
+`;
+
+const LinkCv = styled.a`
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 `;
