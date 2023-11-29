@@ -39,8 +39,9 @@ const SkillsWrapper = styled.div`
   align-items: center;
 
   @media ${theme.media.mobile} {
-    flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 `;
 
