@@ -8,7 +8,7 @@ export const Statistics = () => {
       <PrimaryText>Satisfaction Clients</PrimaryText>
       <SecondaryText>100%</SecondaryText>
       <PrimaryText>Clients On Worldwide</PrimaryText>
-      <SecondaryText>+2</SecondaryText>
+      <SecondaryText>7</SecondaryText>
       <PrimaryText>Projects Done</PrimaryText>
       <SecondaryText>7</SecondaryText>
     </StyledStatistics>
