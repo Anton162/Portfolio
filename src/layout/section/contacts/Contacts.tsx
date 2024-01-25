@@ -26,7 +26,7 @@ export const Contacts = () => {
               <SocialItem>
                 <SocialLink
                   target="_blank"
-                  href="www.linkedin.com/in/anton-petukh"
+                  href="https://linkedin.com/in/anton-petukh"
                 >
                   <Icon
                     height={"25px"}
