@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <Container>
-        Created by <Link href="#">Anton</Link> | All Reserved! 2023
+        Created by <Link href="#">Anton</Link> | All Reserved! 2024
       </Container>
     </StyledFooter>
   );
