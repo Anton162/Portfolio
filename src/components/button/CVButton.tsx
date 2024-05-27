@@ -8,7 +8,7 @@ export const DowloadButton = () => {
     <StyledButton>
       <LinkCv
         target="_blank"
-        // href="https://drive.google.com/file/d/1rXSJK2kFRdwXFDqi36PIxlzX7D8l0plF/view?usp=sharing"
+        href="https://drive.google.com/file/d/1rXSJK2kFRdwXFDqi36PIxlzX7D8l0plF/view?usp=sharing"
       >
         <Icon
           iconId="download"
